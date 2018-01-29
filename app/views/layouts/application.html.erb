@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SodaApp</title>
+    <title><%= yield(:title) %> | Charles Schwab</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+    
+
   </head>
 
   <body>
+    <%= render 'layouts/header' %>
     <%= yield %>
   </body>
 </html>
