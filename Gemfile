@@ -17,6 +17,7 @@ gem 'jbuilder',     '2.7.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'autoprefixer-rails'
 gem 'popper_js', '1.9.9'
+gem 'bcrypt',         '3.1.11'
 
 
 

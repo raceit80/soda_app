@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   get 'static_pages/login'
 
   get 'static_pages/verify_identity'
